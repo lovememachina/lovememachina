@@ -1,106 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Walls - Love Me Machina</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: white;
-      color: red;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Navbar */
-    .navbar {
-      width: 100%;
-      background: white;
-      padding: 10px 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-    }
-
-    .navbar a {
-      color: red;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 0.9em;
-      font-weight: normal;
-    }
-
-    /* Page content */
-    .content {
-      padding-top: 40px;
-      padding-bottom: 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 30px;
-    }
-
-    /* Large top image */
-    .large-photo img {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-      margin-bottom: 20px;
-    }
-
-    /* Two smaller images row */
-    .photo-row {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .photo-row img {
-      width: 48%;
-      height: auto;
-      border-radius: 6px;
-    }
-
-    /* Mobile responsive */
-    @media (max-width: 700px) {
-      .photo-row {
-        flex-direction: column;
-      }
-
-      .photo-row img {
-        width: 100%;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walls | Love Me Machina</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <div class="navbar">
+<header class="site-header">
+  <nav class="nav">
     <a href="walls.html">Walls</a>
     <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Home link -->
+  <h1 class="site-title">
+    <a href="index.html">Love Me Machina</a>
+  </h1>
+
+  <p class="site-subtitle">The Future Lasts Forever</p>
+</header>
+
+
+<!-- WALLS GALLERY -->
+<main class="walls-gallery">
+
+  <!-- Large Image -->
+  <div class="large-photo">
+    <img src="images/lovememachina_tasans_puzzle_1.JPG" alt="Tasan 1">
   </div>
 
-  <!-- Main Content -->
-  <div class="content">
-    <h1>Walls</h1>
-
-    <!-- Large top image -->
-    <div class="large-photo">
-      <img src="images/lovememachina_tasans_puzzle_1.JPG" alt="Tasan 1">
-    </div>
-
-    <!-- Two smaller images -->
-    <div class="photo-row">
-      <img src="images/lovememachina_tasans_puzzle_2.JPG" alt="Tasan 2">
-      <img src="images/lovememachina_tasans_puzzle_3.JPG" alt="Tasan 3">
-    </div>
-
+  <!-- Two smaller images -->
+  <div class="small-photos">
+    <img src="images/lovememachina_tasans_puzzle_2.JPG" alt="Tasan 2">
+    <img src="images/lovememachina_tasans_puzzle_3.JPG" alt="Tasan 3">
   </div>
 
+</main>
 </body>
-</html>
