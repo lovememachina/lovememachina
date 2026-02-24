@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Walls - Love Me Machina</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      color: red;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      width: 100%;
+      background: white;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .navbar a {
+      color: red;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 0.9em;
+      font-weight: normal;
+    }
+
+    /* Page content */
+    .content {
+      padding-top: 80px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    /* Large top image */
+    .large-photo img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    /* Two smaller images row */
+    .photo-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .photo-row img {
+      width: 48%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 700px) {
+      .photo-row {
+        flex-direction: column;
+      }
+
+      .photo-row img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="walls.html">Walls</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Walls</h1>
+
+    <!-- Large top image -->
+    <div class="large-photo">
+      <img src="images/lovememachina_tasans_puzzle_1.jpg" alt="Tasan 1">
+    </div>
+
+    <!-- Two smaller images -->
+    <div class="photo-row">
+      <img src="images/lovememachina_tasans_puzzle_2.jpg" alt="Tasan 2">
+      <img src="images/lovememachina_tasans_puzzle_3" alt="Tasan 3">
+    </div>
+
+  </div>
+
+</body>
+</html>
