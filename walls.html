@@ -32,17 +32,16 @@
 
     /* Page content */
     .content {
-      padding-top: 40px;
-	  padding-bottom: 40px;
+      padding-top: 40px; /* account for navbar */
+      padding-bottom: 40px;
       max-width: 1000px;
       margin: auto;
     }
 
     h1 { 
       font-size: 3em; 
-      margin-bottom: 0.5em;    /* less space */
+      margin-bottom: 0.5em;
     }
-
 
     h1 a {
       text-decoration: none;
@@ -55,27 +54,34 @@
 
     p { 
       font-size: 1.3em; 
-	  margin-top: 0;           /* remove default top gap */
+      margin-top: 0;
       margin-bottom: 2em;
     }
 
-    /* Large top image */
-    .large-photo img {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-      margin-bottom: 20px;
+    /* All images container */
+    .images-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
     }
 
-    /* Two smaller images row */
+    .images-container img {
+      width: 100%; /* all images same width */
+      max-width: 1000px; /* optional, to match content width */
+      height: auto;
+      border-radius: 6px;
+    }
+
+    /* Row for smaller images */
     .photo-row {
       display: flex;
       gap: 20px;
-      justify-content: center;
+      width: 100%;
     }
 
     .photo-row img {
-      width: 50%;
+      width: 50%; /* each image takes half of row */
       height: auto;
       border-radius: 6px;
     }
@@ -106,15 +112,16 @@
     <h1><a href="index.html">Love Me Machina</a></h1>
     <p>Walls</p>
 
-    <!-- Large top image -->
-    <div class="large-photo">
+    <!-- Images container -->
+    <div class="images-container">
+      <!-- Large top image (full width) -->
       <img src="images/lovememachina_tasans_puzzle_1.JPG" alt="Tasan 1">
-    </div>
 
-    <!-- Two smaller images -->
-    <div class="photo-row">
-      <img src="images/lovememachina_tasans_puzzle_2.JPG" alt="Tasan 2">
-      <img src="images/lovememachina_tasans_puzzle_3.JPG" alt="Tasan 3">
+      <!-- Two smaller images side by side, same width as large image -->
+      <div class="photo-row">
+        <img src="images/lovememachina_tasans_puzzle_2.JPG" alt="Tasan 2">
+        <img src="images/lovememachina_tasans_puzzle_3.JPG" alt="Tasan 3">
+      </div>
     </div>
 
   </div>
