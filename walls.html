@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Walls - Love Me Machina</title>
+  <title>Contact - Love Me Machina</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,7 +12,6 @@
       padding: 0;
     }
 
-    /* Navbar */
     .navbar {
       width: 100%;
       background: white;
@@ -22,6 +21,7 @@
       left: 0;
     }
 
+    /* Navbar */
     .navbar a {
       color: red;
       text-decoration: none;
@@ -30,19 +30,18 @@
       font-weight: normal;
     }
 
-    /* Page content */
+   /* Page content */
     .content {
       padding-top: 40px;
-	  padding-bottom: 40px;
+      padding-bottom: 40px;
       max-width: 1000px;
       margin: auto;
     }
 
-    h1 { 
-      font-size: 3em; 
+    h1 {
+      font-size: 3em;
       margin-bottom: 0.5em;    /* less space */
     }
-
 
     h1 a {
       text-decoration: none;
@@ -59,36 +58,18 @@
       margin-bottom: 2em;
     }
 
-    /* Large top image */
-    .large-photo img {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-      margin-bottom: 20px;
+    .email {
+      margin-top: 20px;
+      font-size: 0.8em;
     }
 
-    /* Two smaller images row */
-    .photo-row {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
+    .email a {
+      text-decoration: none;
+      color: red;
     }
 
-    .photo-row img {
-      width: 48%;
-      height: auto;
-      border-radius: 6px;
-    }
-
-    /* Mobile responsive */
-    @media (max-width: 700px) {
-      .photo-row {
-        flex-direction: column;
-      }
-
-      .photo-row img {
-        width: 100%;
-      }
+    .email a:hover {
+      opacity: 0.6;
     }
   </style>
 </head>
@@ -104,19 +85,11 @@
   <!-- Main Content -->
   <div class="content">
     <h1><a href="index.html">Love Me Machina</a></h1>
-    <p>Walls</p>
+    <p>Contact</p>
 
-    <!-- Large top image -->
-    <div class="large-photo">
-      <img src="images/lovememachina_tasans_puzzle_1.JPG" alt="Tasan 1">
+    <div class="email">
+      <a href="lovememachina@gmail.com">lovememachina@gmail.com</a>
     </div>
-
-    <!-- Two smaller images -->
-    <div class="photo-row">
-      <img src="images/lovememachina_tasans_puzzle_2.JPG" alt="Tasan 2">
-      <img src="images/lovememachina_tasans_puzzle_3.JPG" alt="Tasan 3">
-    </div>
-
   </div>
 
 </body>
