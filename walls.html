@@ -73,7 +73,7 @@
       border-radius: 6px;
     }
 
-    /* Row for two smaller images */
+    /* Row for 2 small images */
     .photo-row {
       display: grid;
       grid-template-columns: 1fr 1fr; /* exactly two equal columns */
@@ -88,18 +88,34 @@
       display: block;
     }
 
-	.photo-caption {
-	  font-size: 0.8em;
-	  color: red;
-	  margin-top: 10px;
-	  text-align: center;
+    /* Row for 3 images */
+    .three-photo-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* three equal columns */
+      width: 100%;
+      gap: 20px;
     }
-	  
+
+    .three-photo-row img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+    }
+
+    /* Photo captions */
+    .photo-caption {
+      font-size: 0.8em; /* independent size */
+      color: red;
+      margin-top: 10px;
+      text-align: center;
+    }
+
     /* Mobile responsive */
     @media (max-width: 700px) {
-      .photo-row {
-        grid-template-columns: 1fr; /* stack vertically */
-	  }
+      .photo-row, .three-photo-row {
+        grid-template-columns: 1fr; /* stack images vertically */
+      }
     }
   </style>
 </head>
@@ -116,20 +132,34 @@
   <div class="content">
     <h1><a href="index.html">Love Me Machina</a></h1>
     <p>Walls</p>
+	
+    <!-- New 3-photo cluster -->
+    <div class="images-container"
+      <div class="three-photo-row">
+        <img src="images/lovememachina_wits_puzzle_1.jpg" alt="Wit 1">
+        <img src="images/lovememachina_wits_puzzle_2.JPG" alt="Wit 2">
+        <img src="images/lovememachina_wits_puzzle_3.HEIC" alt="Wit 3">
+      </div>
 
-    <div class="images-container">
+      <!-- Caption under new cluster -->
+      <p class="photo-caption">Wit's Puzzle| Chiang Mai, Thailand | 2025</p>
+    </div>
+
+    <!-- Original 3-photo cluster -->
+    <div class="images-container" style="margin-top:40px;">
       <!-- Large top image -->
       <img src="images/lovememachina_tasans_puzzle_1.JPG" alt="Tasan 1">
 
-      <!-- Two smaller images perfectly aligned with large image -->
+      <!-- Two smaller images -->
       <div class="photo-row">
         <img src="images/lovememachina_tasans_puzzle_2.JPG" alt="Tasan 2">
         <img src="images/lovememachina_tasans_puzzle_3.JPG" alt="Tasan 3">
       </div>
-	  
-	  <!-- Caption below all images -->
-      <p class="photo-caption">Tasan's Puzzle | Hiriketiya, Sri Lanka | 2024</p>	  
+
+      <!-- Caption under first cluster -->
+      <p class="photo-caption">Tasan's Puzzle | Hiriketiya, Sri Lanka | 2024</p>
     </div>
+
   </div>
 
 </body>
