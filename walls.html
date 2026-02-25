@@ -32,7 +32,7 @@
 
     /* Page content */
     .content {
-      padding-top: 40px; /* account for navbar */
+      padding-top: 40px; /* space for navbar */
       padding-bottom: 40px;
       max-width: 1000px;
       margin: auto;
@@ -58,42 +58,40 @@
       margin-bottom: 2em;
     }
 
-    /* All images container */
+    /* Images container */
     .images-container {
       display: flex;
       flex-direction: column;
+      align-items: stretch; /* stretch children to full width */
       gap: 20px;
-      align-items: center;
     }
 
-    .images-container img {
-      width: 100%; /* all images same width */
-      max-width: 1000px; /* optional, to match content width */
+    /* Large top image */
+    .images-container > img {
+      width: 100%;
       height: auto;
       border-radius: 6px;
     }
 
-    /* Row for smaller images */
+    /* Row for two smaller images */
     .photo-row {
-      display: flex;
-      gap: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* exactly two equal columns */
       width: 100%;
+      gap: 20px; /* spacing between the two images */
     }
 
     .photo-row img {
-      width: 50%; /* each image takes half of row */
+      width: 100%;
       height: auto;
       border-radius: 6px;
+      display: block;
     }
 
     /* Mobile responsive */
     @media (max-width: 700px) {
       .photo-row {
-        flex-direction: column;
-      }
-
-      .photo-row img {
-        width: 100%;
+        grid-template-columns: 1fr; /* stack vertically */
       }
     }
   </style>
@@ -112,18 +110,16 @@
     <h1><a href="index.html">Love Me Machina</a></h1>
     <p>Walls</p>
 
-    <!-- Images container -->
     <div class="images-container">
-      <!-- Large top image (full width) -->
+      <!-- Large top image -->
       <img src="images/lovememachina_tasans_puzzle_1.JPG" alt="Tasan 1">
 
-      <!-- Two smaller images side by side, same width as large image -->
+      <!-- Two smaller images perfectly aligned with large image -->
       <div class="photo-row">
         <img src="images/lovememachina_tasans_puzzle_2.JPG" alt="Tasan 2">
         <img src="images/lovememachina_tasans_puzzle_3.JPG" alt="Tasan 3">
       </div>
     </div>
-
   </div>
 
 </body>
